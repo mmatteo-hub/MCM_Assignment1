@@ -13,3 +13,5 @@
 **4.**	Now that you have the `biTei` you can calculate all the transformation matrices between any two links, between a link and the base and the corresponding distance vectors. To do so incorporate these functionalities in the repository functions named accordingly.
 
 **5.**	Now that you’ve reached this point define a starting and ending configuration, **_qi_** and **_qf_**, and try to plot all the intermediate link positions in between the two (you can use the `plot3()` or `line()`  functions).
+
+![Footer](https://www.dropbox.com/s/soyt6xn43x0t8gy/signature_img.png)
