@@ -1,4 +1,4 @@
-# Modeling and Control of Manipulators LAB1
+# Modeling and Control of Manipulators - LAB 1
 
 **1.** You will need to define all the **model matrices**, and fill the so called `biTri` matrix. Be careful to define the z-axis coinciding with the joint rotation axis, and such that the positive rotation is the same as showed in the CAD model you received.
  
