@@ -14,14 +14,13 @@ function [iTj]= GetFrameWrtFrame(linkNumber_i, linkNumber_j, biTei)
     
     % Post-multiply all the matrices that are encountered from link i to
     % link j
-    if linkNumber_i <= linkNumber_j
+    if linkNumber_i < linkNumber_j
         for k= linkNumber_i:linkNumber_j
             iTj= iTj * biTei(:, :, k);
         end
     else
-        for k= linkNumber_j:linkNumber_i
-            iTj= biTei(:, :, k) * iTj;
-        end
+        % error
+        error('Dimensions mismatch between q and biTri');
     end
     
 end

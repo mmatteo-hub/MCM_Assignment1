@@ -10,5 +10,16 @@
 % size of biTei is equal to (4,4,numberOfLinks).
 
 function [biTei] = GetDirectGeometry(q, biTri, linkType)
-%TODO
+    numberOfLinks_1= size(q, 1);
+    numberOfLinks_2= size(biTri, 3);
+    if(numberOfLinks_1 ~= numberOfLinks_2)
+        % error
+        error('Dimensions mismatch between q and biTri');
+    end
+    
+    n= numberOfLinks_1;
+    biTei= zeros(4, 4, n);
+    for i= 1:n
+        biTei(:, :, i)= DirectGeometry(q(i), biTri(:, :, i), linkType(i));
+    end
 end
